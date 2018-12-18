@@ -1,0 +1,42 @@
+<div class="truck_form">
+  <h2>Add a new Movie</h2>
+  <form (submit)="create()">
+      <!-- <p>{{newTask | json }}</p> -->
+      <label>Title
+        <p *ngIf="errors.title"> {{errors.title.message}}</p>
+        <input type="text" name="newMovie.title" [(ngModel)]="newMovie.title" />
+
+      </label>
+
+      <label>Description
+        <p *ngIf="errors.description"> {{errors.description.message}}</p>
+        <input type="text" name="newMovie.description" [(ngModel)]="newMovie.description"/>
+      </label>
+
+      <hr>
+
+      <label>Please Enter Your Name
+          <p *ngIf="errors.name"> {{errors.name.message}}</p>
+          <input type="text" name="newReview.name" [(ngModel)] = "newReview.name"/>
+      </label>
+
+      <label>Rate This Movie
+        <p *ngIf="errors.rating"> {{errors.rating.message}}</p>
+        <select name="newReview.rating" [(ngModel)] = "newReview.rating">
+          <option value=1>1 Star</option>
+          <option value=2>2 Stars</option>
+          <option value=3>3 Stars</option>
+          <option value=4>4 Stars</option>
+          <option value=5>5 Stars</option>
+        </select>
+      </label>
+
+      <label>Review
+        <p *ngIf="errors.review"> {{errors.review.message}}</p>
+        <input type="text" name="newReview.review" [(ngModel)]="newReview.review"  />
+      </label>
+
+      <input class="submit" type="submit" value="Add movie and review">
+    </form>
+    <p *ngIf="errors"> {{errors | json}}</p>
+</div>

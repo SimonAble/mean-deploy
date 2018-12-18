@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.box_contain{
+  margin:20px auto;
+  width:90%;
+  min-height: 500px;
+}
+
+.box{
+	min-height: 500px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 30px #c7c7c7;
+}
+
+.box h2{
+	text-align: center;
+	padding:20px 0px;
+	border-bottom:2px solid #589b58;
+}
+
+table{
+	width:85%;
+	margin: 40px auto;
+	border-collapse: collapse;
+	border-radius:10px;
+}
+
+table a {
+	color:#004080;
+	text-decoration: none;
+}
+
+table a:hover{
+
+}
+
+table, th, td{
+	padding:10px 10px;
+	border:1px solid #ddd;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color:#a4ccad;
+}
+
+th{
+	font-weight: bold;
+	min-width:100px;
+}
+
+.actions{
+  width:30%;
+}
+
+.write_review {
+  position: fixed;
+  width:100%;
+  z-index: 1;
+  top:350px;
+}
+
+.hide{
+  margin:auto 48%;
+  text-align: center;
+  position: relative;
+  width:140px;
+  height:40px;
+  border:1px solid grey;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 16px;
+  padding:0px 10px;
+  transition:.5s;
+}
+
+.hide:hover{
+  background-color:rgb(188, 221, 190);
+}
+
+.actions button{
+  width:30%;
+  height:40px;
+  border:1px solid grey;
+  margin:0px 3px;
+  border-radius: 3px;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size: 14px;
+  transition: .5s;
+}
+
+.actions button:hover {
+  background:rgb(218, 218, 218);
+}

@@ -1,0 +1,14 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="header">
+  <h1> Welcome to {{ title }}! </h1>
+<!-- Creating the Task Component -->
+</div>
+
+<nav>
+  <a [routerLink]="['/']" routerLinkActive="active">Dashboard</a>
+  <a [routerLink]="['/newMovie']" routerLinkActive="active">New Movie</a>
+</nav>
+
+<router-outlet></router-outlet>
+

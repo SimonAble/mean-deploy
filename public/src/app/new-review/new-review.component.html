@@ -1,0 +1,28 @@
+<div class="truck_form">
+  <h2>Add a new Review</h2>
+  <form (submit)="create()">
+
+      <label>Please Enter Your Name
+          <p *ngIf="errors.name"> {{errors.name.message}}</p>
+          <input type="text" name="review.name" [(ngModel)] = "review.name"/>
+      </label>
+
+      <label>Rate This Movie
+        <p *ngIf="errors.rating"> {{errors.rating.message}}</p>
+        <select name="review.rating" [(ngModel)] = "review.rating">
+          <option value=1>1 Star</option>
+          <option value=2>2 Stars</option>
+          <option value=3>3 Stars</option>
+          <option value=4>4 Stars</option>
+          <option value=5>5 Stars</option>
+        </select>
+      </label>
+
+      <label>Review
+        <p *ngIf="errors.review"> {{errors.review.message}}</p>
+        <input type="text" name="review.review" [(ngModel)]="review.review"  />
+      </label>
+
+      <input class="submit" type="submit" value="Add movie and review">
+    </form>
+</div>
